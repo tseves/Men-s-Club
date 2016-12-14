@@ -1,0 +1,468 @@
+
+body {
+	background-color: #2a3e1b;
+	margin: 0;
+}
+
+
+
+h1 {
+	font-family: "hwt-artz";
+	font-size: 72px;
+	color: #2a3e1b;
+	position: fixed;
+	text-align:center;
+	margin: auto;
+	width:90%;
+	top:40px;
+	z-index: 100;
+}
+
+#container {
+	width: calc(100% - 100px - 100px);
+	margin-left:100px;
+}
+
+#golfcourseImg {
+	background-image: url("../images/homepic.jpg");
+	height: 830px;
+	margin-bottom: -830px;
+	z-index:0;
+}
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	position: relative;
+	top: 550px;
+	z-index: 100;
+}
+
+.fix-nav {
+	position: fixed;
+	top: 240px;
+    width: calc(100% - 2 * 100px);
+}
+
+.nav > div {
+	width: 300px
+	height:30px;
+	border: 3px solid white;
+	background-color: #bac03b;
+	color: #2a3e1b;
+	text-align: center;
+	font-family: "hwt-artz";
+	font-size: 30px;
+	letter-spacing: 1px;
+	padding: 15px;
+}
+
+#now {
+	border: 3px solid #bac03b;
+	background-color: white;
+}
+
+.zoom {
+	-webkit-animation: zoom_key 1.5s infinite;
+}
+
+
+.jump {
+    -webkit-animation: jump_key 1.5s infinite;
+}
+
+#arrow {
+	position: absolute;
+	left:670px;
+	top:690px;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	z-index: -2;
+}
+
+@-webkit-keyframes jump_key {
+	0%   { top:690px; }
+	50%  { top:670px; }
+	100% { top:690px; }
+}
+	
+@-webkit-keyframes zoom_key {
+	0%   { width:100px; }
+	50%  { width:125px; }
+	100% { width:100px; }
+}
+	
+.header {
+	position: fixed;
+	width:1400px;
+	height:380px;
+	background-color:#2a3e1b;
+	left:0px;
+	top:-50px;
+	z-index: -1;
+}	
+	
+.bottom {
+	background-color:#2a3e1b;
+	width:100vw;
+	height:700px;
+	color: white;
+	padding: 20px;
+	position: relative;
+	top: 750px;
+	left:-110px;
+	box-sizing:border-box;
+	z-index:-2;
+}
+
+.bottom-margin {
+	margin-top: 68px;
+}
+
+.info {
+	font-family: "chaparral pro";
+	text-align: center;
+	position: relative;
+	width:100%;
+	top:10px;
+	font-size:20px;
+}
+
+.weather {
+	position: absolute;
+	left:1100px;
+	top: 60px;
+}
+
+#size {
+	width: 200px;
+}
+
+#grouppic {
+	display: flex;
+	height:400px;
+	top: 50px;
+	position: relative;
+}
+
+.Centered {
+	width:600px;
+	height:400px;
+	margin:auto;
+}
+
+a {
+	text-decoration: none;
+	color: #2a3e1b;
+}
+
+#twitter-timeline {
+	color: white;
+}
+	
+.twitter {
+	position: absolute;
+	left: 100px;
+	top: 60px;
+}	
+
+a:hover {
+	color: white;
+}
+
+.credits {
+	color: white;
+	font-family: chapparal pro;
+	font-size: 10px;
+	position: absolute;
+	top: 700px;
+	width:100%;
+	text-align: center;
+}
+
+#exec {
+	color: white;
+}
+
+#exec:hover {
+	color: #bac03b;
+}
+	
+
+/** current **/
+
+
+#containerC {
+	width: calc(100% - 100px - 100px);
+	margin-left:100px;
+}
+
+h1.current {
+	color: white;
+	left:50px;
+}
+
+.navC {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	position: relative;
+	top: 150px;
+}
+
+.navC > div {
+	width: 300px
+	height:30px;
+	border: 3px solid white;
+	background-color: #bac03b;
+	color: #2a3e1b;
+	text-align: center;
+	font-family: "hwt-artz";
+	font-size: 30px;
+	letter-spacing: 1px;
+	padding: 15px;
+}
+
+.center {
+	border: 3px solid #bac03b;
+	background-color: white;
+}
+	
+
+/** prospective **/
+
+
+#containerP {
+	width: calc(100% - 100px - 100px);
+	margin-left:100px;
+}
+
+h1.prospective {
+	color: white;
+	left:50px;
+	
+}
+
+.navP {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	position: relative;
+	top: 150px;
+}
+
+.navP > div {
+	width: 300px
+	height:30px;
+	border: 3px solid white;
+	background-color: #bac03b;
+	color: #2a3e1b;
+	text-align: center;
+	font-family: "hwt-artz";
+	font-size: 30px;
+	letter-spacing: 1px;
+	padding: 15px;
+}
+
+.infoP {
+	font-family: "chaparral pro";
+	text-align: center;
+	color: white;
+	position: relative;
+	width:100%;
+	top:200px;
+	font-size:20px;
+}
+	
+/** info **/
+
+#containerI {
+	width: calc(100% - 100px - 100px);
+	margin-left:100px;
+}
+
+h1.infoI {
+	color: white;
+	left:50px;
+	position:fixed;
+}
+
+.navI {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	position: relative;
+	top: 150px;
+}
+
+.navI > div {
+	width: 300px
+	height:30px;
+	border: 3px solid white;
+	background-color: #bac03b;
+	color: #2a3e1b;
+	text-align: center;
+	font-family: "hwt-artz";
+	font-size: 30px;
+	letter-spacing: 1px;
+	padding: 15px;
+}
+
+.rightI {
+	border: 3px solid #bac03b;
+	background-color: white;
+}
+	
+/** exec **/	
+	
+#containerE {
+	width: calc(100% - 100px - 100px);
+	margin-left:100px;
+}
+
+h1.exec {
+	color: white;
+	left:50px;
+	position:fixed;
+	z-index:100;
+}
+	
+.navE {
+	display: flex;
+	position: fixed;
+	top: 150px;
+	z-index:100;
+}
+
+.navE > div {
+	width: 300px
+	height:30px;
+	border: 3px solid white;
+	background-color: #bac03b;
+	color: #2a3e1b;
+	text-align: center;
+	font-family: "hwt-artz";
+	font-size: 30px;
+	letter-spacing: 1px;
+	padding: 15px;
+}
+
+.fix-navE {
+	position: fixed;
+	top: 150px;
+    width: calc(100% - 2 * 100px);
+}
+
+.leftE {
+	position: fixed;
+	left:300px;
+}
+
+.centerE {
+	position: fixed;
+	left:700px;
+}
+
+.rightE {
+	position: fixed;
+	left:1030px;
+}
+	
+#headerE {
+	position: fixed;
+	width:1400vw;
+	height:300px;
+	background-color:#2a3e1b;
+	left:-110px;
+	top:-50px;
+	z-index:11;
+}
+
+.one {
+	position: absolute;
+	top:350px;
+	z-index:10;
+	text-align: center;
+	font-family: "chaparral pro";
+	font-size:20px;
+	color: white;
+}
+
+.two {
+	position: absolute;
+	top:350px;
+	left:550px;
+	z-index:10;
+	text-align: center;
+	font-family: "chaparral pro";
+	font-size:20px;
+	color: white;
+}
+
+.three {
+	position: absolute;
+	top: 350px;
+	right:100px;
+	z-index:10;
+	text-align: center;
+	font-family: "chaparral pro";
+	font-size:20px;
+	color: white;
+}
+
+.four {
+	position: absolute;
+	top: 750px;
+	z-index:10;
+	text-align: center;
+	font-family: "chaparral pro";
+	font-size:20px;
+	color: white;
+}
+
+.five {
+	position: absolute;
+	top: 750px;
+	left:550px;
+	z-index:10;
+	text-align: center;
+	font-family: "chaparral pro";
+	font-size:20px;
+	color: white;
+}
+
+.six {
+	position: absolute;
+	top: 750px;
+	right:100px;
+	z-index:10;
+	text-align: center;
+	font-family: "chaparral pro";
+	font-size:20px;
+	color: white;
+}
+
+.seven {
+	position: absolute;
+	top: 1150px;
+	left:550px;
+	z-index:10;
+	text-align: center;
+	font-family: "chaparral pro";
+	font-size:20px;
+	color: white;
+}
+
+#email {
+	color:white;
+}
+
+#email:hover {
+	color: #bac03b;
+}
+
